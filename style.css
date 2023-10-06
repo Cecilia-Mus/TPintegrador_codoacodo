@@ -13,8 +13,8 @@
  }
 
  /* CONF-INFO */
-.carousel-item > img {
-    max-height: 80vh;
+#carouselIntro .carousel-item > img {
+    max-height: 70vh;
     object-fit: cover;    
     filter: brightness(50%);
 }
@@ -47,6 +47,17 @@
 
 .card-text {
     line-height: 2rem;
+}
+
+/* LUGAR */
+
+#carouselLugar .carousel-item > img {
+    height: 60vh;
+    object-fit: cover;
+}
+
+#lugar h3+p {
+    font-size: 1.15rem;
 }
 
 /* FORM */
