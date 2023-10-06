@@ -1,0 +1,71 @@
+/* reemplazo SUCCESS (green) */
+.custom-green {
+    --bs-btn-bg: #29A744;
+    --bs-btn-hover-bg: #57ce71;
+    --bs-nav-link-color: #29A744;
+    --bs-nav-link-hover-color: #57ce71;
+    --bs-btn-hover-border-color: #0cb466;
+}
+
+/* NAV */
+.navbar {
+    --bs-navbar-nav-link-padding-x: 0.75rem;
+ }
+
+ /* CONF-INFO */
+.carousel-item > img {
+    max-height: 80vh;
+    object-fit: cover;    
+    filter: brightness(50%);
+}
+
+.carousel-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 500;
+    color: white;
+}
+
+.carousel-overlay p:first-child {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.btn-xlg {
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-font-size: 1.5rem;
+}
+
+/* ORADORES */
+.bg-info{
+    --bs-info-rgb: 23, 162, 185;
+}
+
+.card-text {
+    line-height: 2rem;
+}
+
+/* FORM */
+
+textarea::placeholder {
+    font-size: x-large;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1d4052;
+}
+
+footer a {
+    --bs-nav-link-color: white;
+    --bs-nav-link-hover-color: rgb(154, 177, 212);
+    --bs-nav-link-font-size: 1.25rem;
+    padding: 3rem !important;
+    white-space: normal;
+}
+
+/* OTROS */
