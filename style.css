@@ -13,7 +13,7 @@ html {
 }
 
 /* NAV */
-.navbar {
+#navbar .navbar {
     --bs-navbar-nav-link-padding-x: 0.75rem;
  }
 
@@ -24,7 +24,7 @@ html {
     filter: brightness(50%);
 }
 
-.carousel-overlay {
+#intro .carousel-overlay {
     position: absolute;
     left: 0;
     right: 0;
@@ -34,34 +34,38 @@ html {
     color: white;
 }
 
-.carousel-overlay p:first-child {
+#intro .carousel-overlay p:first-child {
     font-size: 3rem;
     font-weight: 500;
 }
 
-.btn-xlg {
+#intro .btn-xlg {
     --bs-btn-padding-y: 0.5rem;
     --bs-btn-padding-x: 1rem;
     --bs-btn-font-size: 1.5rem;
 }
 
 /* ORADORES */
-.bg-info{
+#oradores .bg-info{
     --bs-info-rgb: 23, 162, 185;
 }
 
-.card-text {
+#oradores .card-text {
     line-height: 2rem;
 }
 
 /* LUGAR */
 #carouselLugar .carousel-item > img {
-    height: 60vh;
+    height: 65vh;
     object-fit: cover;
 }
 
-#lugar h2+p {
+#lugar p {
     font-size: 1.15rem;
+}
+
+#lugar h2 {
+    font-size: 2.25rem;
 }
 
 /* PARTICIPA */
