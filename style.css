@@ -1,3 +1,8 @@
+/* FIX SCROLLSPY */
+html {
+    scroll-padding-top: 112px; /* altura nav */
+}
+
 /* reemplazo SUCCESS (green) */
 .custom-green {
     --bs-btn-bg: #29A744;
@@ -12,7 +17,7 @@
     --bs-navbar-nav-link-padding-x: 0.75rem;
  }
 
- /* CONF-INFO */
+ /* INTRO */
 #carouselIntro .carousel-item > img {
     max-height: 80vh;
     object-fit: cover;    
@@ -59,12 +64,12 @@
     font-size: 1.15rem;
 }
 
-/* FORM */
+/* PARTICIPA */
 textarea::placeholder {
     font-size: x-large;
 }
 
-#participa .btn.custom-green {
+#participar .btn.custom-green {
     --bs-btn-bg: #96C93E;
     --bs-btn-hover-bg: #71a020;
     --bs-btn-border-color: #96C93E;
