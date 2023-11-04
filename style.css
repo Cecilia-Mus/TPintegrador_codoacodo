@@ -17,6 +17,10 @@ html {
     --bs-navbar-nav-link-padding-x: 0.75rem;
  }
 
+ .custom-green.nav-link.active {
+    --bs-navbar-active-color: #57ce71;
+ }
+
  /* INTRO */
 #carouselIntro .carousel-item > img {
     max-height: 80vh;
@@ -74,6 +78,13 @@ textarea::placeholder {
 }
 
 #participar .btn.custom-green {
+    --bs-btn-bg: #96C93E;
+    --bs-btn-hover-bg: #71a020;
+    --bs-btn-border-color: #96C93E;
+}
+
+/* COMPRA */
+#comprar .btn.custom-green {
     --bs-btn-bg: #96C93E;
     --bs-btn-hover-bg: #71a020;
     --bs-btn-border-color: #96C93E;

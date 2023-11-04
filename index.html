@@ -11,7 +11,7 @@
     <body>
         <nav id="navbar" class="navbar sticky-top navbar-expand-lg bg-body-secondary" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand fs-3 col-4 text-center" href="#">
+                <a class="navbar-brand fs-3 col-md-4 text-center" href="#">
                     <img src="./images/codoacodo.png" alt="Logo" width="150" height="86" class="d-inline-block">Conf Bs As
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
                         </div>
                         <div class="carousel-overlay container-fluid">
                             <div class="row h-100 align-items-center">
-                                <div class="col-5 offset-6 text-end">
+                                <div class="col-md-5 offset-6 text-end">
                                     <p>Conf Bs As</p>
                                     <p class="fs-4 pb-3">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer niver que tenemos para ti. Te esperamos!</p>
                                     <a class="btn btn-outline-light btn-xlg" href="#participar" role="button">Quiero ser orador</a>
@@ -96,7 +96,7 @@
         <!-- LUGAR -->    
             <div id="lugar" class="card mt-3">
                 <div class="row g-1 mx-0">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div id="carouselLugar" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause=false>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -117,7 +117,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 bg-body-secondary text-white" data-bs-theme="dark">
+                    <div class="col-md-6 bg-body-secondary text-white" data-bs-theme="dark">
                         <div class="card-body">
                             <h2 class="card-title">Bs As - Octubre</h2>
                             <p class="card-text">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
@@ -129,15 +129,15 @@
         <!-- PARTICIPA -->    
             <div id="participar" class="container mb-3">
                 <div class="row justify-content-center">
-                    <form class="row col-9 g-3">
+                    <form class="row col-md-9 g-3">
                         <div class="text-center">
                             <div class="fs-6">CONVIÉRTETE EN UN<br><span class="fs-1 fw-medium">ORADOR</span></div>
                             <div class="fs-5">Anótate como orador para dar una <abbr title="charlas cortas de 5 minutos">charla ignite</abbr>. Cuéntanos de qué quieres hablar!</div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6">
                             <input type="text" class="form-control form-control-lg" id="inputNombre" placeholder="Nombre">
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6">
                             <input type="text" class="form-control form-control-lg" id="inputApellido" placeholder="Apellido">
                         </div>
                         <div class="col">
@@ -150,10 +150,101 @@
                     </form>
                 </div>
             </div>
+
+        <!-- COMPRA -->
+            <div id="comprar" class="container mb-3">
+                <div class="row justify-content-center">
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="text-center col border border-primary m-1 p-3">
+                                <h4>Estudiante</h4>
+                                Tienen un descuento
+                                <h5>80%</h5>
+                                <p class="form-text">* presentar documentación</p>
+                            </div>
+
+                            <div class="text-center col border border-success m-1 p-3">
+                                <h4>Trainee</h4>
+                                Tienen un descuento
+                                <h5>50%</h5>
+                                <p class="form-text">* presentar documentación</p>                      
+                            </div>
+
+                            <div class="text-center col border border-warning m-1 p-3">
+                                <h4>Junior</h4>
+                                Tienen un descuento
+                                <h5>15%</h5>
+                                <p class="form-text">* presentar documentación</p>                     
+                            </div>
+
+                        </div>
+
+                        <div class="formulario col">
+                            <div class="text-center">
+                                <p>VENTA</p>
+                                <h2 class="mb-3">VALOR DE TICKET $200</h2>
+                            </div>
+                            <form id="form_compra" class="needs-validation" novalidate="">
+
+                                <div class="row g-3">
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="firstName" placeholder="Nombre" value="" required="">
+                                        <div class="invalid-feedback">
+                                            Campo obligatorio.
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="lastName" placeholder="Apellido" value="" required="">
+                                        <div class="invalid-feedback">
+                                            Campo obligatorio.
+                                        </div>
+                                    </div>
+                        
+                                    <div class="col-12">
+                                        <input type="email" class="form-control" id="email" placeholder="Correo">
+                                        <div class="invalid-feedback">
+                                            Campo obligatorio.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="cantidad" class="form-label">Cantidad</label>
+                                        <input type="number" min="0" max="99" class="form-control" id="cantidad" placeholder="Cantidad" required="">
+                                        <div class="invalid-feedback">
+                                            Campo obligatorio.
+                                        </div>
+                                    </div>   
+
+                                    <div class="col-md-6">
+                                        <label for="categoria" class="form-label">Categoría</label>
+                                        <select class="form-select" id="categoria" required="">
+                                            <option value="estudiante">Estudiante</option>
+                                            <option value="trainee">Trainee</option>
+                                            <option value="junior">Junior</option>
+                                            <option value="otros">Otros (sin descuento)</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Campo obligatorio.
+                                        </div>
+                                    </div>
+
+                                    <div id="totalDisplay" class="alert alert-primary" role="alert">
+                                        Total a Pagar: $<span id="results">0</span>
+                                    </div>
+
+                                    <button class="btn btn-success btn-lg custom-green col m-1" type="reset">Borrar</button>
+                                    <button id="botonCalcular" class="btn btn-success btn-lg custom-green col m-1" type="button">Resumen</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
         </main>
         <!-- FOOTER -->    
         <footer class="container-fluid">
-            <div class="nav justify-content-center col-10 offset-1 align-items-center text-center">
+            <div class="nav justify-content-center col-md-10 offset-1 align-items-center text-center">
                 <a href="#" class="nav-link col">Preguntas frecuentes</a>
                 <a href="#" class="nav-link col">Contáctanos</a>
                 <a href="#" class="nav-link col">Prensa</a>
@@ -165,4 +256,5 @@
         </footer>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./scripts.js"></script>
 </html>
