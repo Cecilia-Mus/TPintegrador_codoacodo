@@ -30,6 +30,13 @@ const cargarPrecio = (valor) => {
     espacioPrecio.textContent = valor; // cambiamos el valor
 };
 
+const resetearPrecio = document.getElementById('botonReset'); // boton de reseteo
+if (resetearPrecio) {
+    resetearPrecio.addEventListener('click', () => {
+        cargarPrecio(0);  // volvemos el valor a 0
+    })
+}
+
 const calcularPrecio = document.getElementById('botonCalcular'); // boton de calculo
 if (calcularPrecio) {
     calcularPrecio.addEventListener('click', () => {
